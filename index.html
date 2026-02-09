@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РусПромТех</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-tractor"></i>
+                    <h1>Рус<span>Пром</span>Тех</h1>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav id="mainNav" class="mainNav">
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#tractors">Тракторы</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#order" class="btn">Заказать</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Аренда тракторов</h2>
+            <p>Мы предлагаем широкий выбор современной тракторной техники в аренду для сельскохозяйственных, строительных и промышленных работ. Надежная техника по доступным ценам.</p>
+            <a href="#tractors" class="btn">Смотреть каталог</a>
+        </div>
+    </section>
+
+    <!-- Tractors Section -->
+    <section id="tractors">
+        <div class="container">
+            <div class="section-title">
+                <h2>Наша техника</h2>
+            </div>
+            
+            <div class="tractors-grid">
+                <!-- Трактор 1 -->
+                <div class="tractor-card">
+                    <div class="tractor-img" style="background-image: url('');"></div>
+                    <div class="tractor-info">
+                        <h3>Трактор 1</h3>
+                        <p>Универсальный трактор для сельскохозяйственных работ. Идеален для пахоты, посева, обработки почвы.</p>
+                        
+                        <div class="tractor-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-horse-head"></i>
+                                <div class="spec-value">80 л.с.</div>
+                                <div class="spec-label">Мощность</div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-weight"></i>
+                                <div class="spec-value">3.8 т</div>
+                                <div class="spec-label">Вес</div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <div class="spec-value">Дизель</div>
+                                <div class="spec-label">Топливо</div>
+                            </div>
+                        </div>
+                        
+                        <div class="price">2 500 ₽ <span>/ сутки</span></div>
+                        <button class="btn btn-order" data-tractor="1">Арендовать</button>
+                    </div>
+                </div>
+                
+                <!-- Трактор 2 -->
+                <div class="tractor-card">
+                    <div class="tractor-img" style="background-image: url('');"></div>
+                    <div class="tractor-info">
+                        <h3>Трактор 2</h3>
+                        <p>Современный трактор с кабиной повышенного комфорта. Оснащен системой GPS для точного земледелия.</p>
+                        
+                        <div class="tractor-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-horse-head"></i>
+                                <div class="spec-value">140 л.с.</div>
+                                <div class="spec-label">Мощность</div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-weight"></i>
+                                <div class="spec-value">5.2 т</div>
+                                <div class="spec-label">Вес</div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <div class="spec-value">Дизель</div>
+                                <div class="spec-label">Топливо</div>
+                            </div>
+                        </div>
+                        
+                        <div class="price">5 800 ₽ <span>/ сутки</span></div>
+                        <button class="btn btn-order" data-tractor="2">Арендовать</button>
+                    </div>
+                </div>
+                
+                <!-- Трактор 3 -->
+                <div class="tractor-card">
+                    <div class="tractor-img" style="background-image: url('');"></div>
+                    <div class="tractor-info">
+                        <h3>Трактор 3</h3>
+                        <p>Мощный трактор для тяжелых работ. Применяется для глубокой вспашки, мелиоративных и строительных работ.</p>
+                        
+                        <div class="tractor-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-horse-head"></i>
+                                <div class="spec-value">300 л.с.</div>
+                                <div class="spec-label">Мощность</div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-weight"></i>
+                                <div class="spec-value">12.8 т</div>
+                                <div class="spec-label">Вес</div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <div class="spec-value">Дизель</div>
+                                <div class="spec-label">Топливо</div>
+                            </div>
+                        </div>
+                        
+                        <div class="price">8 500 ₽ <span>/ сутки</span></div>
+                        <button class="btn btn-order" data-tractor="3">Арендовать</button>
+                    </div>
+                </div>
+                
+                <!-- Трактор 4 -->
+                <div class="tractor-card">
+                    <div class="tractor-img" style="background-image: url('');"></div>
+                    <div class="tractor-info">
+                        <h3>Трактор 4</h3>
+                        <p>Компактный трактор для работы на небольших участках, в теплицах и садах. Маневренный и экономичный.</p>
+                        
+                        <div class="tractor-specs">
+                            <div class="spec-item">
+                                <i class="fas fa-horse-head"></i>
+                                <div class="spec-value">24 л.с.</div>
+                                <div class="spec-label">Мощность</div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-weight"></i>
+                                <div class="spec-value">1.2 т</div>
+                                <div class="spec-label">Вес</div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-gas-pump"></i>
+                                <div class="spec-value">Дизель</div>
+                                <div class="spec-label">Топливо</div>
+                            </div>
+                        </div>
+                        
+                        <div class="price">1 800 ₽ <span>/ сутки</span></div>
+                        <button class="btn btn-order" data-tractor="4">Арендовать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>О компании "РусПромТех"</h2>
+                    <p>Мы являемся одним из ведущих поставщиков тракторной техники в аренду в Центральном регионе России. Наша компания работает на рынке более 15 лет, за это время мы помогли сотням сельскохозяйственных предприятий, фермеров и строительных компаний.</p>
+                    <p>Наш парк техники постоянно обновляется и включает в себя как современные модели, так и проверенные временем классические тракторы. Все машины проходят регулярное техническое обслуживание и готовы к выполнению задач любой сложности.</p>
+                    <p>Мы предлагаем гибкие условия аренды — от нескольких часов до долгосрочной аренды на сезон. Также предоставляем услуги опытных механизаторов при необходимости.</p>
+                </div>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Надежность</h3>
+                        <p>Вся техника проходит регулярное ТО</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruble-sign"></i>
+                        <h3>Выгодные цены</h3>
+                        <p>Скидки при долгосрочной аренде</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <h3>Быстрая подача</h3>
+                        <p>Доставка техники в день заказа</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <h3>Поддержка 24/7</h3>
+                        <p>Круглосуточная техническая помощь</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Контакты</h2>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Свяжитесь с нами</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Адрес</h4>
+                            <a href="https://yandex.ru/maps/-/CPQaj6nY" style="text-decoration: none; color: white;">г. Санкт-Петербург, ул. Расстанная, д. 27В</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Телефон</h4>
+                            <a href="tel:+78127182476" style="text-decoration: none; color: white;">+7 (812) 718-24-76</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:rpt78@yandex.ru" style="text-decoration: none; color: white;">rpt78@yandex.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Режим работы</h4>
+                            <p>Пн-Чт: 9:00 - 17:00<br>Пт: 9:00 - 16:00 <br>Сб-Вс: Закрыто</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" id="order">
+                    <h3>Форма заказа</h3>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tractor">Трактор</label>
+                            <select id="tractor" class="form-control" required>
+                                <option value="">Выберите трактор</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="period">Срок аренды (дней)</label>
+                            <input type="number" id="period" class="form-control" min="1" max="365" value="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Дополнительная информация</label>
+                            <textarea id="message" class="form-control" placeholder="Укажите даты, особенности работы и т.д."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>РусПромТех</h3>
+                    <p>Профессиональная аренда тракторной техники для сельского хозяйства и строительства. Надежные машины по доступным ценам.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="#" style="color: white; margin-right: 15px; font-size: 20px;"><i class="fab fa-vk"></i></a>
+                        <a href="#" style="color: white; margin-right: 15px; font-size: 20px;"><i class="fab fa-telegram"></i></a>
+                        <a href="#" style="color: white; font-size: 20px;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Наши услуги</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Аренда тракторов</a></li>
+                        <li><a href="#">Аренда навесного оборудования</a></li>
+                        <li><a href="#">Услуги механизатора</a></li>
+                        <li><a href="#">Доставка техники</a></li>
+                        <li><a href="#">Техническое обслуживание</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Быстрые ссылки</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#tractors">Каталог техники</a></li>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                        <li><a href="#order">Заказать</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 РусПромТех. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+</html>
